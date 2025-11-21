@@ -1,0 +1,93 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto; */
+}
+
+*, *::before, *::after {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar > span {
+  padding: 1em;
+  border: 1px solid gray;
+  border-bottom: none;
+  background-color: rgb(41, 40, 40);
+  font-size: large;
+  cursor: pointer;
+}
+
+.nav-bar > span:active {
+  background-color: rgb(23, 22, 22);
+  font-size: large;
+  cursor: auto;
+  transform: scale(0.95);
+}
+
+.question {
+  display: grid;
+  padding-block: 0.5rem;
+}
+
+.question-op {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.question .title {
+  font-weight: bold;
+}
+
+.question > .info {
+  display: flex;
+  gap: 0 0.5rem;
+  padding: 0.5rem;
+}
+
+.question > .info > span {
+  border: 1px solid white;
+  padding: 0.125em;
+  font-size: small;
+  border-radius: 3px;
+  background-color: rgb(70, 68, 68);
+}
+
+.question > .answer {
+  display: grid;
+  gap: 0.25em;
+}
+
+.question > .answer > .image {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.question > .answer > input {
+  padding: 0.25rem;
+}
+
+.answer-image > div > img {
+  display: block;
+}
+
+.answer > .choice {
+  display: flex;
+  gap: 0.25em;
+  padding-left: 1em;
+}
+
+.answer > .text {
+  padding: 0.5rem 0.25rem;
+  margin-left: 0.5em;
+}
